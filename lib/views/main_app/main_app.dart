@@ -7,11 +7,12 @@ import 'package:polymer_elements/paper_icon_button.dart';
 
 import '../../model/ttt_board.dart';
 import '../board_view/board_view.dart';
+import '../message_bar/message_bar.dart';
 
 @Component(selector: 'main-app',
     encapsulation: ViewEncapsulation.Native,
     templateUrl: 'main_app.html',
-    directives: const [BoardView]
+    directives: const [BoardView, MessageBar]
 )
 class MainApp {
   TTTBoard board;
