@@ -24,5 +24,12 @@
     </paper-toolbar>
 
     <div class="layout vertical center content">
+        <board-view [size]="boardSize"
+                    [model]="board"
+                    [currentPlayer]="currentPlayer"
+                    [interfaceEnabled]="interfaceEnabled"
+                    (win)="onWin($event)" (tie)="onTie()" (move)="nextTurn()">
+
+        </board-view>
     </div>
 </paper-header-panel>
